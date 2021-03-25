@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".location.LocationEntryFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray">
+
+    <EditText
+        android:id="@+id/zipcodeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center_vertical"
+        android:hint="Zipcode"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/lookup_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/gray"
+        android:text="Lookup"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/zipcodeEditText"
+        app:layout_constraintStart_toStartOf="@+id/zipcodeEditText"
+        app:layout_constraintTop_toBottomOf="@+id/zipcodeEditText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
